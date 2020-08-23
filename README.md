@@ -2,4 +2,4 @@
 
 * Nombre del grupo: LAJ
 * Integrantes: Lucas Juarez
-* Descripción del negocio: Servicio para la administración y monitoreo de backups en bases de datos.
+* Descripción del negocio: Servicio para la administración y monitoreo de backups en bases de datos
