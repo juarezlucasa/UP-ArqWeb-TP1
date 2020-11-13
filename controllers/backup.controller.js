@@ -33,6 +33,15 @@ exports.backup_details = function (req, res, next) {
     })
 };
 
+
+exports.backup_all = function (req, res) {
+  Backup.find(({}), function(err, backup) {
+    if (err) throw err;
+    res.send(backup);
+  })
+};
+
+
 exports.backup_update = function (req, res, next) {
     Backup.findByIdAndUpdate(req.params.id, {$set: req.body}, function (err, backup) {
         if (err) return next(err);

@@ -11,6 +11,8 @@ router.post('/create', backup_controller.backup_create);
 
 router.get('/:id', backup_controller.backup_details);
 
+router.get('/', backup_controller.backup_all);
+
 router.put('/:id/update', backup_controller.backup_update);
 
 router.delete('/:id/delete', backup_controller.backup_delete);
